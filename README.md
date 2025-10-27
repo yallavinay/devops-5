@@ -2,14 +2,14 @@
 
 This project demonstrates how to set up a Kubernetes cluster using Minikube, deploy a sample Nginx application, expose it using a service, and access it through a browser.
 
-## 📌 Tools Used
+##  Tools Used
 
 - **Minikube** - Local Kubernetes cluster
 - **Docker** - Container runtime
 - **kubectl** - Kubernetes CLI
 - **YAML** - Configuration files for Deployment & Service
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 task5-devops/
@@ -200,56 +200,4 @@ kubectl delete -f service.yaml
 kubectl delete -f deployment.yaml
 ```
 
-## 🎯 Expected Results
-
-After completing all steps, you should see:
-
-1. **Nginx Welcome Page** in your browser
-2. **2 running pods** initially, then **5 pods** after scaling
-3. **Service accessible** on NodePort 30008
-4. **Successful deployment** with all pods in "Running" status
-
-## 📸 Screenshots
-
-Add your terminal and browser screenshots to the `screenshots/` directory:
-
-- `minikube-start.png` - Minikube cluster startup
-- `pods-running.png` - Pods status after deployment
-- `service-created.png` - Service creation confirmation
-- `nginx-browser.png` - Nginx welcome page in browser
-- `scaled-pods.png` - Pods after scaling to 5 replicas
-
-## 🔧 Troubleshooting
-
-### Common Issues:
-
-1. **Minikube won't start**: Ensure Docker Desktop is running
-2. **Pods stuck in Pending**: Check if Docker has enough resources
-3. **Service not accessible**: Verify NodePort is in range (30000-32767)
-4. **Browser can't connect**: Check firewall settings
-
-### Useful Debug Commands:
-
-```bash
-# Check Minikube status
-minikube status
-
-# View Minikube logs
-minikube logs
-
-# Check cluster info
-kubectl cluster-info
-
-# Get all resources
-kubectl get all
-```
-
-## 📚 Additional Resources
-
-- [Minikube Documentation](https://minikube.sigs.k8s.io/docs/)
-- [Kubernetes Documentation](https://kubernetes.io/docs/)
-- [Docker Documentation](https://docs.docker.com/)
-
----
-
-**Happy Kubernetes Learning! 🚀**
+##
